@@ -4,7 +4,7 @@ function backgroundCallback() {
     var m = today.getMinutes();
     var s = today.getSeconds();
   
-    if (h >= 7 && h <= 19) {
+    if (h >= 7 && h <= 18) {
     	setTimeMode(true);
     } else {
 		setTimeMode(false);

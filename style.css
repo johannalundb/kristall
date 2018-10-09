@@ -39,8 +39,8 @@ p {
 }
 
 #rubrik img {
-  margin: 3vw;
-  width: 94vw;
+  margin: 5vw 5vw 5vw 5vw;
+  width: 90vw;
 }
 
 #text-box {
@@ -49,8 +49,8 @@ p {
 }
 
 #text-box p {
-  width: 94vw;
-  margin: 0px 3vw 0 3vw;
+  width: 90vw;
+  margin: 0px 5vw 0 5vw;
 }
 
 /* SYMBOLS */
@@ -75,7 +75,7 @@ p {
 
 #clock {
   display: inline-block;
-  font-size: 13pt;
+  font-size: 14pt;
   margin-top:2px;
   margin-right: 5px;  
 }
@@ -123,15 +123,27 @@ p {
 }
 
 #crystal01 img{
-  margin-left: 20vw;
-  width: 80vw;
+  right: 0;
+  width: 50vw;
 }
 
 #crystal02 img{
   transform: rotate(90deg); 
   mix-blend-mode: lighten;
-  width: 100vw;
+  width: 70vw;
+  margin-top: 12vw;
+  left: 15vw;
 }
+
+.desktop {
+  display: block;
+}
+
+.mobile {
+  display: none;
+}
+
+
 
 #rainbow img{
   width: 100vw;
@@ -215,6 +227,20 @@ p {
   margin-left: 20vw;
 }
 
+#crystal02 img{
+  width: 100vw;
+  left: 0;
+  margin: 0;
+}
+
 #rainbow-desktop {
+  display: none;
+}
+
+.mobile {
+  display: block;
+}
+
+.desktop {
   display: none;
 }
