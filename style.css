@@ -138,6 +138,13 @@ p {
   opacity: 0.8;
 }
 
+#crystal03 img{
+  transform: rotate(50deg); 
+  top: 10px;
+  left:15vw;
+  width: 70vw;
+}
+
 .desktop {
   display: block;
 }
