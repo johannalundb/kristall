@@ -18,6 +18,7 @@
 body {
   margin: 0;
   transition: 1s;
+  overflow-x: hidden;
 }
 
 p {
@@ -25,6 +26,18 @@ p {
   font-size: 7.4vw;
   color:#cccccc; 
 }
+
+body::-webkit-scrollbar {
+  width: 0px;
+  height: 13px;
+}
+/* Add a thumb */
+body::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius:10px;
+    border: solid 2px black;
+}
+
 /*THEME*/
 .neutral {
   background: #cccccc;
@@ -39,13 +52,12 @@ p {
 }
 
 #rubrik img {
-  margin: 5vw 5vw 5vw 5vw;
+  margin: 5vh 5vw 5vh 5vw; 
   width: 90vw;
 }
 
 #text-box {
   width: 100vw;
- 
 }
 
 #text-box p {
@@ -53,7 +65,7 @@ p {
   margin: 0px 5vw 0 5vw;
 }
 
-/* SYMBOLS */
+ /*SYMBOLS */
  #info-header {
   position: fixed;
   top: 7px;
@@ -115,7 +127,6 @@ p {
   margin-top: -70vw;
 }
 
-
 /*IMAGES*/
 .backgroundImg img{
   z-index: 0;
@@ -161,7 +172,7 @@ p {
 #grains {
   background-image: url('assets/grains04.png');
   background-size: cover;
-  padding: 5px 0 5px 0;
+  /*padding: 5px 0 5px 0;*/
   background-repeat: no-repeat; 
 }
 
@@ -171,21 +182,15 @@ p {
   margin-top: -30vw;
 }
 
-#cross img {
-  width: 55%;
-  margin-left: 20%;
-  mix-blend-mode: multiply;
-  opacity: 0.4;
-}
-
 
 @media only screen and (min-aspect-ratio: 47/29) { 
 
   #rubrik img {
-      margin: 3vh;
-      height: 94vh;
+      margin-left: 5vw;
+      height: 88vh;
       width: auto;
     }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -195,13 +200,13 @@ p {
 }
 
 #rubrik img{
-  width: auto;
+  width: 90vw;
   height: auto;
   margin: 10vw 5vw 5vw 5vw; /*40px 15px 20px 15px*/
 }
 
 #text-box p {
-  width: auto;
+  width: 90vw;
   margin: 0 3vw 0 5vw;
 }
 
