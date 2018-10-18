@@ -19,6 +19,9 @@ body {
   margin: 0;
   transition: 1s;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 p {
@@ -29,13 +32,6 @@ p {
 
 body::-webkit-scrollbar {
   width: 0px;
-  height: 13px;
-}
-/* Add a thumb */
-body::-webkit-scrollbar-thumb {
-    background-color: white;
-    border-radius:10px;
-    border: solid 2px black;
 }
 
 /*THEME*/
